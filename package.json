@@ -1,0 +1,37 @@
+{
+  "name": "news-scraper",
+  "version": "1.0.0",
+  "description": "Web app listing scraped content using MongoDB and nodeJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfonsodlopez/news-scraper.git"
+  },
+  "keywords": [
+    "nodejs",
+    "node",
+    "mongo",
+    "mongodb",
+    "webscraper",
+    "scraper",
+    "mongoose"
+  ],
+  "author": "Alfonso Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alfonsodlopez/news-scraper/issues"
+  },
+  "homepage": "https://github.com/alfonsodlopez/news-scraper#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.13.7",
+    "morgan": "^1.9.0",
+    "request": "^2.83.0"
+  }
+}

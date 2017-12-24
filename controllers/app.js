@@ -39,3 +39,5 @@ function scrapeItems(url) {
         });
     });
 }
+
+exports.scrapeItems = scrapeItems

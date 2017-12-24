@@ -4,7 +4,8 @@
   "description": "Web app listing scraped content using MongoDB and nodeJS",
   "main": "server.js",
   "scripts": {
-    "test": "node server.js"
+    "test": "node server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",

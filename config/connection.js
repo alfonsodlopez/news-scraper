@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 mongoose.Promise = Promise;
 
 // mongodb connection
-mongoose.connect("mongodb://localhost/test", {
+mongoose.connect("mongodb://localhost/scraper", {
   useMongoClient: true,
   promiseLibrary: global.Promise
 });

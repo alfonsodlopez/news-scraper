@@ -3,25 +3,20 @@ const express = require('express');
 const router = express.Router();
 const Scrape = require('../models/Scrape.js');
 const Note = require('../models/Note.js');
-const scraper = require('../controllers/app.js');
+const scraper = require('../controllers/app');
 
-router.get('/', function(request, response) 
-{
+router.get('/', function(request, response) {
 	/*Get scraped items*/
-	Scrape.find({}, function(error, data) 
-	{
+	Scrape.find({}, function(error, data) {
 		if (error) console.log("Error getting items", error);
-		response.render('index', {title: "PodcastScraper", Podcasts: data});
+		response.render('index', {title: "Financial articles", articles: data});
 	});
-
 }); 
 
 /*Scrape Route*/
-router.get('/scrape', function(request, response) 
-{
+router.get('/scrape', function(request, response) {
 	/*Run scraping funcion*/
-	scraper.scrapeItems(function() 
-	{
+	scraper.scrapeItems(function() {
 		/*scrape then return to home page*/
 		response.redirect('/');
 	});

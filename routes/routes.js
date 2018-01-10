@@ -16,10 +16,12 @@ router.get('/', function(request, response) {
 /*Scrape Route*/
 router.get('/scrape', function(request, response) {
 	/*Run scraping funcion*/
-	scraper.scrapeItems(function() {
-		/*scrape then return to home page*/
-		response.redirect('/');
-	});
+	scraper.scrapeItems(function(err, res) {
+		if(error) {
+			console.error()
+		}
+	})
+	response.redirect('/')
 });
 
 /*Get Notes Route*/
